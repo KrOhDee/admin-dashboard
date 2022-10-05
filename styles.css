@@ -1,0 +1,340 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+.split {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 230px 1fr;
+      grid-template-columns: 230px 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  margin: 0;
+  padding: 0;
+}
+
+.left {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  min-width: 180px;
+  margin: 0;
+  background-color: wheat;
+}
+
+.left .logo {
+  width: 30px;
+  height: auto;
+}
+
+.left .align {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  margin-top: 25px;
+  margin-left: 25px;
+  max-width: 30px;
+}
+
+.left .dash {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.left a {
+  text-decoration: none;
+  color: palevioletred;
+}
+
+.left .nav-break {
+  margin-bottom: 15px;
+}
+
+.left .nav-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+.left .settings {
+  margin-top: 70px;
+}
+
+.right {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.right .search-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.right .under-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+
+.right .hi-there {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 550px;
+}
+
+.right .hi-there > p {
+  margin: 0;
+  padding: 0;
+}
+
+.right .sub-holder {
+  background-color: gainsboro;
+  -webkit-box-shadow: 0 -2px antiquewhite;
+          box-shadow: 0 -2px antiquewhite;
+  height: 100vh;
+}
+
+.right .sub-holder2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.right .sub-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 20px;
+  margin-bottom: -50px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.right .cards {
+  background-color: white;
+  height: 190px;
+  margin-left: 20px;
+  border-radius: 5px;
+  padding: 5px;
+  -webkit-box-shadow: 1px 1px 3px palevioletred, -5px 0px brown;
+          box-shadow: 1px 1px 3px palevioletred, -5px 0px brown;
+  margin-top: 30px;
+}
+
+.right .card-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 15px;
+  margin-right: 10px;
+  margin-top: 25px;
+}
+
+.right .card-icon .card-img {
+  width: 30px;
+  height: auto;
+}
+
+.right .sub-left {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 400px 400px;
+      grid-template-columns: 400px 400px;
+  -ms-grid-rows: 100px 100px;
+      grid-template-rows: 100px 100px;
+  row-gap: 120px;
+  margin-top: 30px;
+}
+
+.right .pfp {
+  width: 40px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.right .bell {
+  margin-left: 280px;
+  margin-right: 10px;
+}
+
+.right .search {
+  margin-left: 30px;
+}
+
+.right input {
+  width: 600px;
+  border-radius: 10px;
+  height: 20px;
+  background-color: wheat;
+}
+
+.right .pfp-name {
+  font-weight: 700;
+}
+
+.right #announcments {
+  margin-left: 747px;
+}
+
+.right .sub-right {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 250px;
+      grid-template-columns: 250px;
+  -ms-grid-rows: 295px 295px;
+      grid-template-rows: 295px 295px;
+  row-gap: 50px;
+  margin-left: 50px;
+}
+
+.right .sub-right .card2 {
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px, 1px;
+          box-shadow: 1px, 1px;
+  position: relative;
+  top: 50px;
+  margin-top: -30px;
+  -webkit-box-shadow: 1px 1px 3px palevioletred;
+          box-shadow: 1px 1px 3px palevioletred;
+}
+
+.right .sub-right .card2-column1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -8px;
+}
+
+.right .sub-right .column1 {
+  font-size: 12px;
+  margin-top: -10px;
+}
+
+.right .sub-right .alt {
+  border-bottom: solid 1px grey;
+  margin-bottom: 3px;
+}
+
+.right .sub-right .bold {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: -2px;
+}
+
+.right .sub-right .column2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  font-size: 12px;
+}
+
+.right .sub-right .column2-pfp {
+  width: 40px;
+  height: 30px;
+}
+
+.right .sub-right .card3 {
+  padding: 10px;
+  margin-top: 1px;
+}
+
+.right .sub-right .column2-at {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.right .sub-right .names {
+  margin-bottom: -10px;
+}
+
+ul {
+  list-style: none;
+  margin-top: 50px;
+}
+
+li {
+  max-width: 20px;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  margin-left: -10px;
+}
+
+button {
+  height: 30px;
+  width: 80px;
+  border-radius: 15px;
+  margin-left: 15px;
+  background-color: palevioletred;
+  color: white;
+  border: solid 1px wheat;
+}
+
+.nav-logos {
+  width: 20px;
+  height: auto;
+}
+
+#trending {
+  position: relative;
+  font-weight: 700;
+  top: 380px;
+  right: 100px;
+}
+/*# sourceMappingURL=styles.css.map */
