@@ -1,9 +1,10 @@
-html, body {
+html,
+body {
   margin: 0;
   height: 100%;
 }
 
-.split {
+main {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 230px 1fr;
@@ -14,21 +15,44 @@ html, body {
   padding: 0;
 }
 
+ul {
+  list-style: none;
+  margin-top: 50px;
+}
+
+li {
+  max-width: 20px;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  margin-left: -10px;
+}
+
+button {
+  height: 30px;
+  width: 80px;
+  border-radius: 15px;
+  margin-left: 15px;
+  background-color: #4278f6;
+  color: white;
+  border: solid 1px white;
+}
+
+.clickable:hover {
+  cursor: pointer;
+}
+
 .left {
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  grid-column-end: 2;
   min-width: 180px;
   margin: 0;
-  background-color: wheat;
+  background-color: #4278f6;
 }
 
-.left .logo {
-  width: 30px;
-  height: auto;
+.left a {
+  text-decoration: none;
+  color: white;
 }
 
-.left .align {
+.left .left-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,14 +65,14 @@ html, body {
   max-width: 30px;
 }
 
-.left .dash {
-  margin: 0;
-  font-size: 1.4rem;
+.left .dash-logo {
+  width: 30px;
+  height: auto;
 }
 
-.left a {
-  text-decoration: none;
-  color: palevioletred;
+.left .dash-text {
+  margin: 0;
+  font-size: 1.4rem;
 }
 
 .left .nav-break {
@@ -69,10 +93,16 @@ html, body {
   margin-top: 70px;
 }
 
-.right {
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  grid-column-end: 3;
+.right input {
+  width: 600px;
+  border-radius: 10px;
+  height: 20px;
+  background-color: white;
+}
+
+.right input:focus {
+  outline-color: #4278f6;
+  cursor: text;
 }
 
 .right .search-area {
@@ -87,6 +117,29 @@ html, body {
   margin-bottom: 5px;
 }
 
+.right .search {
+  margin-left: 30px;
+}
+
+.right .bell {
+  margin-left: 280px;
+  margin-right: 10px;
+}
+
+.right .pfp {
+  width: 40px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.right .pfp-name {
+  font-weight: 700;
+}
+
+.right .pfp-name-top {
+  margin-left: -15px;
+}
+
 .right .under-search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -95,45 +148,26 @@ html, body {
       -ms-flex-align: center;
           align-items: center;
   margin-left: 30px;
-  margin-bottom: 15px;
 }
 
 .right .hi-there {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin-right: 550px;
 }
 
-.right .hi-there > p {
-  margin: 0;
-  padding: 0;
-}
-
-.right .sub-holder {
-  background-color: gainsboro;
-  -webkit-box-shadow: 0 -2px antiquewhite;
-          box-shadow: 0 -2px antiquewhite;
+.right .content {
+  background-color: #ced7ff;
+  -webkit-box-shadow: 0 -2px #4278f6;
+          box-shadow: 0 -2px #4278f6;
   height: 100vh;
 }
 
-.right .sub-holder2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.right .sub-top {
+.right .content-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -146,14 +180,34 @@ html, body {
   font-weight: 700;
 }
 
+.right .sub-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.right .sub-left {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 400px 400px;
+      grid-template-columns: 400px 400px;
+  -ms-grid-rows: 100px 100px;
+      grid-template-rows: 100px 100px;
+  row-gap: 120px;
+  margin-top: 30px;
+}
+
 .right .cards {
   background-color: white;
   height: 190px;
   margin-left: 20px;
   border-radius: 5px;
   padding: 5px;
-  -webkit-box-shadow: 1px 1px 3px palevioletred, -5px 0px brown;
-          box-shadow: 1px 1px 3px palevioletred, -5px 0px brown;
+  -webkit-box-shadow: 1px 1px 3px #4278f6, -5px 0px blue;
+          box-shadow: 1px 1px 3px #4278f6, -5px 0px blue;
   margin-top: 30px;
 }
 
@@ -174,45 +228,15 @@ html, body {
   height: auto;
 }
 
-.right .sub-left {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 400px 400px;
-      grid-template-columns: 400px 400px;
-  -ms-grid-rows: 100px 100px;
-      grid-template-rows: 100px 100px;
-  row-gap: 120px;
-  margin-top: 30px;
-}
-
-.right .pfp {
-  width: 40px;
-  height: auto;
-  margin-right: 15px;
-}
-
-.right .bell {
-  margin-left: 280px;
-  margin-right: 10px;
-}
-
-.right .search {
-  margin-left: 30px;
-}
-
-.right input {
-  width: 600px;
-  border-radius: 10px;
-  height: 20px;
-  background-color: wheat;
-}
-
-.right .pfp-name {
-  font-weight: 700;
-}
-
-.right #announcments {
+.right .announcments-title {
   margin-left: 747px;
+}
+
+.right .trending-title {
+  position: relative;
+  font-weight: 700;
+  top: 380px;
+  right: 100px;
 }
 
 .right .sub-right {
@@ -235,11 +259,11 @@ html, body {
   position: relative;
   top: 50px;
   margin-top: -30px;
-  -webkit-box-shadow: 1px 1px 3px palevioletred;
-          box-shadow: 1px 1px 3px palevioletred;
+  -webkit-box-shadow: 1px 1px 3px #4278f6;
+          box-shadow: 1px 1px 3px #4278f6;
 }
 
-.right .sub-right .card2-column1 {
+.right .sub-right .card2-column {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,7 +287,10 @@ html, body {
 .right .sub-right .bold {
   font-weight: 700;
   font-size: 14px;
-  margin-bottom: -2px;
+}
+
+.right .sub-right .card2-text {
+  font-size: 14px;
 }
 
 .right .sub-right .column2 {
@@ -280,14 +307,14 @@ html, body {
   font-size: 12px;
 }
 
+.right .sub-right .column2-styling {
+  padding: 10px;
+  margin-top: 1px;
+}
+
 .right .sub-right .column2-pfp {
   width: 40px;
   height: 30px;
-}
-
-.right .sub-right .card3 {
-  padding: 10px;
-  margin-top: 1px;
 }
 
 .right .sub-right .column2-at {
@@ -300,41 +327,12 @@ html, body {
           flex-direction: column;
 }
 
-.right .sub-right .names {
+.right .sub-right .column2-names {
   margin-bottom: -10px;
-}
-
-ul {
-  list-style: none;
-  margin-top: 50px;
-}
-
-li {
-  max-width: 20px;
-  font-size: 1.1rem;
-  margin-bottom: 20px;
-  margin-left: -10px;
-}
-
-button {
-  height: 30px;
-  width: 80px;
-  border-radius: 15px;
-  margin-left: 15px;
-  background-color: palevioletred;
-  color: white;
-  border: solid 1px wheat;
 }
 
 .nav-logos {
   width: 20px;
   height: auto;
-}
-
-#trending {
-  position: relative;
-  font-weight: 700;
-  top: 380px;
-  right: 100px;
 }
 /*# sourceMappingURL=styles.css.map */
