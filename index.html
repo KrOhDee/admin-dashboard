@@ -1,199 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <main>
-        <div class="left">
-            <div class="left-header">
-                <img class="dash-logo clickable"src="https://www.logoai.com/oss/icons/2021/10/18/adf28acdb2b6029c09b47c61d362d09c.png" alt="img">
-                <p class="dash-text clickable">Dashboard</p>
-            </div>
-            <ul>
-                <li class="nav-items clickable">
-                    <img class="nav-logos" src="https://www.freepnglogos.com/uploads/logo-home-png/house-silhouette-home-buildings-houses-home-silhouette-15.png" alt="home logo">
-                    <a href="#">Home</a>
-                </li>
-                <li class="nav-items clickable">
-                    <img class="nav-logos" src="https://cdn.picpng.com/person/user-person-people-profile-53120.png" alt="home logo">
-                    <a href="#">Profile</a>
-                </li>
-                <li class="nav-items clickable">
-                    <img class="nav-logos" src="http://cdn.onlinewebfonts.com/svg/img_53145.png" alt="home logo">
-                    <a href="#">Messages</a>
-                </li>
-                <li class="nav-items clickable">
-                    <img class="nav-logos" src="https://icons.iconarchive.com/icons/icons8/windows-8/512/Cinema-Historical-icon.png" alt="home logo">
-                    <a href="#">History</a>
-                </li>
-                <li class="nav-items clickable">   
-                    <img class="nav-logos" src="https://www.pngall.com/wp-content/uploads/8/Task-List-PNG-Clipart.png" alt="home logo">               
-                    <a href="#">Tasks</a>
-                </li>
-                <li class="nav-break nav-items clickable">
-                    <img class="nav-logos" src="https://www.pngall.com/wp-content/uploads/1/Community-High-Quality-PNG.png" alt="home logo">
-                    <a href="#">Communities</a>
-                </li>
-                <li class="nav-items settings clickable">
-                    <img class="nav-logos" src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Settings-icon-symbol-vector.png" alt="home logo">
-                    <a href="#">Settings</a>
-                </li>
-                <li class="nav-items clickable">
-                    <img class="nav-logos" src="https://www.pngmart.com/files/7/Support-PNG-File.png" alt="home logo">
-                    <a href="#">Support</a>
-                </li>
-                <li class="nav-items clickable">
-                    <img class="nav-logos" src="https://www.sonicbit.net/assets/image/main_website/privacy.png" alt="home logo">
-                    <a href="#">Privacy</a>
-                </li>
-            </ul>
+      <div class="left">
+        <div class="left-header">
+          <img
+            class="dash-logo clickable"
+            src="https://www.logoai.com/oss/icons/2021/10/18/adf28acdb2b6029c09b47c61d362d09c.png"
+            alt="img"
+          />
+          <p class="dash-text clickable">Dashboard</p>
         </div>
-        <div class="right">
-            <!--Display flex search-area-->
-            <div class="search-area">
-                <img class="nav-logos search clickable" src="https://cdn0.iconfinder.com/data/icons/very-basic-2-android-l-lollipop-icon-pack/24/search-512.png" alt="a search icon">
-                <input class="clickable" type="text">
-                <img class="nav-logos bell clickable" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-bell-512.png" alt="a bell icon">
-                <img class="pfp clickable" src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="a profile picture">
-                <p class="pfp-name pfp-name-top">Morgan Oakley</p>
-            </div>
-            <!--Display flex under-search-->
-            <div class="under-search">
-                <img class="pfp clickable" src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="a profile picture">
-                <!--Display flex column hi-there-->
-                <div class="hi-there pfp-name">
-                    <p>Hi there, <br />Morgan Oakley (@morgan)</p>
-                </div>
-                <button class="clickable">New</button>
-                <button class="clickable">Upload</button>
-                <button class="clickable">Share</button>
-            </div>
-            <div class="content">
-            <div class="content-top">
-                <p>Your Projects</p>
-                <p class="announcments-title clickable">Announcments</p>
-                <p class="trending-title clickable">Trending</p>
-            </div>
-            
-            <div class="sub-content">
-                <div class="sub-left">
-                    <div class="cards">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, laudantium modi ex culpa voluptatibus, vel iste animi, veniam provident velit dolor dolore porro eos inventore reiciendis ipsum recusandae quod! Mollitia.</p>
-                        <div class="card-icon">
-                            <img src="https://static.thenounproject.com/png/1772503-200.png" alt="" class="card-img clickable">
-                            <img src="https://cdn0.iconfinder.com/data/icons/mix-of-simple-vol-4/57/03-512.png" alt="" class="card-img clickable">
-                            <img src="https://cdn.iconscout.com/icon/free/png-256/git-fork-3603485-3003810.png" alt="" class="card-img clickable">
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, laudantium modi ex culpa voluptatibus, vel iste animi, veniam provident velit dolor dolore porro eos inventore reiciendis ipsum recusandae quod! Mollitia.</p>
-                        <div class="card-icon">
-                            <img src="https://static.thenounproject.com/png/1772503-200.png" alt="" class="card-img clickable">
-                            <img src="https://cdn0.iconfinder.com/data/icons/mix-of-simple-vol-4/57/03-512.png" alt="" class="card-img clickable">
-                            <img src="https://cdn.iconscout.com/icon/free/png-256/git-fork-3603485-3003810.png" alt="" class="card-img clickable">
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, laudantium modi ex culpa voluptatibus, vel iste animi, veniam provident velit dolor dolore porro eos inventore reiciendis ipsum recusandae quod! Mollitia.</p>
-                        <div class="card-icon">
-                            <img src="https://static.thenounproject.com/png/1772503-200.png" alt="" class="card-img clickable">
-                            <img src="https://cdn0.iconfinder.com/data/icons/mix-of-simple-vol-4/57/03-512.png" alt="" class="card-img clickable">
-                            <img src="https://cdn.iconscout.com/icon/free/png-256/git-fork-3603485-3003810.png" alt="" class="card-img clickable">
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, laudantium modi ex culpa voluptatibus, vel iste animi, veniam provident velit dolor dolore porro eos inventore reiciendis ipsum recusandae quod! Mollitia.</p>
-                        <div class="card-icon">
-                            <img src="https://static.thenounproject.com/png/1772503-200.png" alt="" class="card-img clickable">
-                            <img src="https://cdn0.iconfinder.com/data/icons/mix-of-simple-vol-4/57/03-512.png" alt="" class="card-img clickable">
-                            <img src="https://cdn.iconscout.com/icon/free/png-256/git-fork-3603485-3003810.png" alt="" class="card-img clickable">
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, laudantium modi ex culpa voluptatibus, vel iste animi, veniam provident velit dolor dolore porro eos inventore reiciendis ipsum recusandae quod! Mollitia.</p>
-                        <div class="card-icon">
-                            <img src="https://static.thenounproject.com/png/1772503-200.png" alt="" class="card-img clickable">
-                            <img src="https://cdn0.iconfinder.com/data/icons/mix-of-simple-vol-4/57/03-512.png" alt="" class="card-img clickable">
-                            <img src="https://cdn.iconscout.com/icon/free/png-256/git-fork-3603485-3003810.png" alt="" class="card-img clickable">
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, laudantium modi ex culpa voluptatibus, vel iste animi, veniam provident velit dolor dolore porro eos inventore reiciendis ipsum recusandae quod! Mollitia.</p>
-                        <div class="card-icon">
-                            <img src="https://static.thenounproject.com/png/1772503-200.png" alt="" class="card-img clickable">
-                            <img src="https://cdn0.iconfinder.com/data/icons/mix-of-simple-vol-4/57/03-512.png" alt="" class="card-img clickable">
-                            <img src="https://cdn.iconscout.com/icon/free/png-256/git-fork-3603485-3003810.png" alt="" class="card-img clickable">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="sub-right">
-                    <div class="card2">
-                        <div class="card2-column">
-                            <div class="column1 alt">
-                                <p class="bold clickable">Site Maintenance</p>
-                                <p class="card2-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sint nisi possimus hic necessitatibus nam.</p>
-                            </div>
-                            <div class="column1 alt">
-                                <p class="bold clickable">Community Share Day</p>
-                                <p class="card2-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sint nisi possimus hic necessitatibus nam.</p>
-                            </div>
-                            <div class="column1">
-                                <p class="bold clickable">Updated Privacy Policy</p>
-                                <p class="card2-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio itaque repellat saepe? Dolore debitis reprehenderit.</p>
-                            </div>
-                        </div>
-                    </div>
+        <ul>
+          <li class="nav-items clickable">
+            <img
+              class="nav-logos"
+              src="https://www.freepnglogos.com/uploads/logo-home-png/house-silhouette-home-buildings-houses-home-silhouette-15.png"
+              alt="home logo"
+            />
+            <a href="#">Home</a>
+          </li>
+          <li class="nav-items clickable">
+            <img
+              class="nav-logos"
+              src="https://cdn.picpng.com/person/user-person-people-profile-53120.png"
+              alt="home logo"
+            />
+            <a href="#">Profile</a>
+          </li>
+          <li class="nav-items clickable">
+            <img
+              class="nav-logos"
+              src="http://cdn.onlinewebfonts.com/svg/img_53145.png"
+              alt="home logo"
+            />
+            <a href="#">Messages</a>
+          </li>
+          <li class="nav-items clickable">
+            <img
+              class="nav-logos"
+              src="https://icons.iconarchive.com/icons/icons8/windows-8/512/Cinema-Historical-icon.png"
+              alt="home logo"
+            />
+            <a href="#">History</a>
+          </li>
+          <li class="nav-items clickable">
+            <img
+              class="nav-logos"
+              src="https://www.pngall.com/wp-content/uploads/8/Task-List-PNG-Clipart.png"
+              alt="home logo"
+            />
+            <a href="#">Tasks</a>
+          </li>
+          <li class="nav-break nav-items clickable">
+            <img
+              class="nav-logos"
+              src="https://www.pngall.com/wp-content/uploads/1/Community-High-Quality-PNG.png"
+              alt="home logo"
+            />
+            <a href="#">Communities</a>
+          </li>
+          <li class="nav-items settings clickable">
+            <img
+              class="nav-logos"
+              src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Settings-icon-symbol-vector.png"
+              alt="home logo"
+            />
+            <a href="#">Settings</a>
+          </li>
+          <li class="nav-items clickable">
+            <img
+              class="nav-logos"
+              src="https://www.pngmart.com/files/7/Support-PNG-File.png"
+              alt="home logo"
+            />
+            <a href="#">Support</a>
+          </li>
+          <li class="nav-items clickable">
+            <img
+              class="nav-logos"
+              src="https://www.sonicbit.net/assets/image/main_website/privacy.png"
+              alt="home logo"
+            />
+            <a href="#">Privacy</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right">
+        <!--Display flex search-area-->
+        <div class="search-area">
+          <img
+            class="nav-logos search clickable"
+            src="https://cdn0.iconfinder.com/data/icons/very-basic-2-android-l-lollipop-icon-pack/24/search-512.png"
+            alt="a search icon"
+          />
+          <input class="clickable" type="text" />
+          <img
+            class="nav-logos bell clickable"
+            src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-bell-512.png"
+            alt="a bell icon"
+          />
+          <img
+            class="pfp clickable"
+            src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+            alt="a profile picture"
+          />
+          <p class="pfp-name pfp-name-top">Morgan Oakley</p>
+        </div>
+        <!--Display flex under-search-->
+        <div class="under-search">
+          <img
+            class="pfp clickable"
+            src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+            alt="a profile picture"
+          />
+          <!--Display flex column hi-there-->
+          <div class="hi-there pfp-name">
+            <p>Hi there, <br />Morgan Oakley (@morgan)</p>
+          </div>
+          <button class="clickable">New</button>
+          <button class="clickable">Upload</button>
+          <button class="clickable">Share</button>
+        </div>
+        <div class="content">
+          <div class="content-top">
+            <p>Your Projects</p>
+            <p class="announcments-title clickable">Announcments</p>
+            <p class="trending-title clickable">Trending</p>
+          </div>
 
-                
-                    <div class="card2 column2-styling">
-                        <div class="card2-column">
-                            <div class="column2">
-                                <img class="column2-pfp clickable" src="https://www.shareicon.net/data/512x512/2016/09/15/829452_user_512x512.png" alt="">
-                                <div class="column2-info">
-                                    <p class="bold column2-names clickable">@tegan</p>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                                </div> 
-                            </div>
-                            <div class="column2">
-                                <img class="column2-pfp clickable" src="https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-PNG-Photos.png" alt="">
-                                <div class="column2-info">
-                                    <p class="bold column2-names clickable">@morgan</p>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="column2">
-                                <img class="column2-pfp clickable" src="https://www.pngall.com/wp-content/uploads/12/Avatar-Profile.png" alt="">
-                                <div class="column2-info">
-                                    <p class="bold column2-names clickable">@kendall</p>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                </div>
-                            </div>
-                            <div class="column2">
-                                <img class="column2-pfp clickable" src="https://cdn5-ss8.sharpschool.com/UserFiles/Servers/Server_416292/Image/Profile%20pic.png" alt="">
-                                <div class="column2-info">
-                                    <p class="bold column2-names clickable">@alex</p>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+          <div class="sub-content">
+            <div class="sub-left">
+              <div class="cards">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eligendi, laudantium modi ex culpa voluptatibus, vel iste
+                  animi, veniam provident velit dolor dolore porro eos inventore
+                  reiciendis ipsum recusandae quod! Mollitia.
+                </p>
+                <div class="card-icon">
+                  <img
+                    src="https://static.thenounproject.com/png/1772503-200.png"
+                    alt=""
+                    class="card-img clickable"
+                  />
+                  <img
+                    src="https://cdn0.iconfinder.com/data/icons/mix-of-simple-vol-4/57/03-512.png"
+                    alt=""
+                    class="card-img clickable"
+                  />
+                  <img
+                    src="https://cdn.iconscout.com/icon/free/png-256/git-fork-3603485-3003810.png"
+                    alt=""
+                    class="card-img clickable"
+                  />
                 </div>
+              </div>
+              <div class="cards">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eligendi, laudantium modi ex culpa voluptatibus, vel iste
+                  animi, veniam provident velit dolor dolore porro eos inventore
+                  reiciendis ipsum recusandae quod! Mollitia.
+                </p>
+                <div class="card-icon">
+                  <img
+                    src="https://static.thenounproject.com/png/1772503-200.png"
+                    alt=""
+                    class="card-img clickable"
+                  />
+                  <img
+                    src="https://cdn0.iconfinder.com/data/icons/mix-of-simple-vol-4/57/03-512.png"
+                    alt=""
+                    class="card-img clickable"
+                  />
+                  <img
+                    src="https://cdn.iconscout.com/icon/free/png-256/git-fork-3603485-3003810.png"
+                    alt=""
+                    class="card-img clickable"
+                  />
+                </div>
+              </div>
+              <div class="cards">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eligendi, laudantium modi ex culpa voluptatibus, vel iste
+                  animi, veniam provident velit dolor dolore porro eos inventore
+                  reiciendis ipsum recusandae quod! Mollitia.
+                </p>
+                <div class="card-icon">
+                  <img
+                    src="https://static.thenounproject.com/png/1772503-200.png"
+                    alt=""
+                    class="card-img clickable"
+                  />
+                  <img
+                    src="https://cdn0.iconfinder.com/data/icons/mix-of-simple-vol-4/57/03-512.png"
+                    alt=""
+                    class="card-img clickable"
+                  />
+                  <img
+                    src="https://cdn.iconscout.com/icon/free/png-256/git-fork-3603485-3003810.png"
+                    alt=""
+                    class="card-img clickable"
+                  />
+                </div>
+              </div>
+              <div class="cards">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eligendi, laudantium modi ex culpa voluptatibus, vel iste
+                  animi, veniam provident velit dolor dolore porro eos inventore
+                  reiciendis ipsum recusandae quod! Mollitia.
+                </p>
+                <div class="card-icon">
+                  <img
+                    src="https://static.thenounproject.com/png/1772503-200.png"
+                    alt=""
+                    class="card-img clickable"
+                  />
+                  <img
+                    src="https://cdn0.iconfinder.com/data/icons/mix-of-simple-vol-4/57/03-512.png"
+                    alt=""
+                    class="card-img clickable"
+                  />
+                  <img
+                    src="https://cdn.iconscout.com/icon/free/png-256/git-fork-3603485-3003810.png"
+                    alt=""
+                    class="card-img clickable"
+                  />
+                </div>
+              </div>
+              <div class="cards">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eligendi, laudantium modi ex culpa voluptatibus, vel iste
+                  animi, veniam provident velit dolor dolore porro eos inventore
+                  reiciendis ipsum recusandae quod! Mollitia.
+                </p>
+                <div class="card-icon">
+                  <img
+                    src="https://static.thenounproject.com/png/1772503-200.png"
+                    alt=""
+                    class="card-img clickable"
+                  />
+                  <img
+                    src="https://cdn0.iconfinder.com/data/icons/mix-of-simple-vol-4/57/03-512.png"
+                    alt=""
+                    class="card-img clickable"
+                  />
+                  <img
+                    src="https://cdn.iconscout.com/icon/free/png-256/git-fork-3603485-3003810.png"
+                    alt=""
+                    class="card-img clickable"
+                  />
+                </div>
+              </div>
+              <div class="cards">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eligendi, laudantium modi ex culpa voluptatibus, vel iste
+                  animi, veniam provident velit dolor dolore porro eos inventore
+                  reiciendis ipsum recusandae quod! Mollitia.
+                </p>
+                <div class="card-icon">
+                  <img
+                    src="https://static.thenounproject.com/png/1772503-200.png"
+                    alt=""
+                    class="card-img clickable"
+                  />
+                  <img
+                    src="https://cdn0.iconfinder.com/data/icons/mix-of-simple-vol-4/57/03-512.png"
+                    alt=""
+                    class="card-img clickable"
+                  />
+                  <img
+                    src="https://cdn.iconscout.com/icon/free/png-256/git-fork-3603485-3003810.png"
+                    alt=""
+                    class="card-img clickable"
+                  />
+                </div>
+              </div>
             </div>
+
+            <div class="sub-right">
+              <div class="card2">
+                <div class="card2-column">
+                  <div class="column1 alt">
+                    <p class="bold clickable">Site Maintenance</p>
+                    <p class="card2-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Beatae sint nisi possimus hic necessitatibus nam.
+                    </p>
+                  </div>
+                  <div class="column1 alt">
+                    <p class="bold clickable">Community Share Day</p>
+                    <p class="card2-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Beatae sint nisi possimus hic necessitatibus nam.
+                    </p>
+                  </div>
+                  <div class="column1">
+                    <p class="bold clickable">Updated Privacy Policy</p>
+                    <p class="card2-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Distinctio itaque repellat saepe? Dolore debitis
+                      reprehenderit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card2 column2-styling">
+                <div class="card2-column">
+                  <div class="column2">
+                    <img
+                      class="column2-pfp clickable"
+                      src="https://www.shareicon.net/data/512x512/2016/09/15/829452_user_512x512.png"
+                      alt=""
+                    />
+                    <div class="column2-info">
+                      <p class="bold column2-names clickable">@tegan</p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="column2">
+                    <img
+                      class="column2-pfp clickable"
+                      src="https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-PNG-Photos.png"
+                      alt=""
+                    />
+                    <div class="column2-info">
+                      <p class="bold column2-names clickable">@morgan</p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="column2">
+                    <img
+                      class="column2-pfp clickable"
+                      src="https://www.pngall.com/wp-content/uploads/12/Avatar-Profile.png"
+                      alt=""
+                    />
+                    <div class="column2-info">
+                      <p class="bold column2-names clickable">@kendall</p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="column2">
+                    <img
+                      class="column2-pfp clickable"
+                      src="https://cdn5-ss8.sharpschool.com/UserFiles/Servers/Server_416292/Image/Profile%20pic.png"
+                      alt=""
+                    />
+                    <div class="column2-info">
+                      <p class="bold column2-names clickable">@alex</p>
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        </div>
+      </div>
     </main>
-</body>
+  </body>
 </html>
